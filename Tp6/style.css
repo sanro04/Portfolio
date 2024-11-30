@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    background-color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de la barra lateral */
+.sidebar {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    display: none;
+}
+
+/* Estilo de los elementos del contenedor */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 200px;
+    margin: 10px;
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo de las imágenes */
+img {
+    width: 100%; /* Imagen ocupa todo el ancho por defecto */
+}
+
+/* Media Query para pantallas grandes (mínimo 960px) */
+@media (min-width: 960px) {
+    body {
+        background-color: #333; /* Fondo oscuro */
+    }
+}
+
+/* Media Query para pantallas pequeñas (máximo 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 20px; /* Aumentar tamaño de la fuente */
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace; /* Cambiar tipografía */
+    }
+}
+
+/* Media Query para orientación vertical (modo retrato) */
+@media (orientation: portrait) {
+    .sidebar {
+        display: none; /* Ocultar barra lateral en orientación vertical */
+    }
+}
+
+/* Media Query para orientación horizontal (modo paisaje) */
+@media (orientation: landscape) {
+    .navbar {
+        display: block; /* Mostrar barra de navegación en orientación horizontal */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center; /* Cambiar diseño a una sola columna */
+    }
+}
+
+@media (min-width: 1200px) {
+    .item {
+        margin-bottom: 30px; /* Aumentar espacio entre elementos */
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 80%; /* Reducir tamaño de las imágenes */
+    }
+}

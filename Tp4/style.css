@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Ejercicio 1: */
+section:nth-of-type(1) {
+    background-color: lightblue;
+    margin: 20px;
+    padding: 15px;
+}
+
+/* Ejercicio 2 */
+section:nth-of-type(2) {
+    background-image: url("imgs/ej2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Ejercicio 3 */
+section:nth-of-type(3) {
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+/* Ejercicio 4: */
+section:nth-of-type(4) p {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/* Ejercicio 5: */
+section:nth-of-type(5) div {
+    background-color: yellow; 
+    text-align: center; 
+    padding: 10px;
+}
+
+/* Ejercicio 6: */
+section:nth-of-type(6) {
+    border: double 5px purple;
+    background-color: gold;
+    margin: 40px;
+}
+
+/* Ejercicio 7: */
+section:nth-of-type(7) {
+    background-image: url("imgs/ej7.jpeg"); 
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+/* Ejercicio 8: */
+section:nth-of-type(8) {
+    background-image: url("imgs/ej8.jpg");
+    background-size: 50% auto;
+    background-repeat: repeat-y;
+}
+
+/* Ejercicio 9: */
+section:nth-of-type(9) {
+    background-color: lightgreen;
+    background-image: url("imgs/ej9.png"); 
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+section:nth-of-type(9) .btn {
+    background-color: #ff6347; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Ejercicio 10: */
+section:nth-of-type(10) {
+    width: 50%;
+    border: 3px dotted green;
+    padding: 25px;
+}

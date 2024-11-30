@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfil Personal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-image: url('imagenes/fondo.jpg');">
+
+    <div class="container">
+        <header>
+            <h1>SANTIAGO RODRIGUEZ</h1>
+        </header>
+
+        <main style="margin-top: 60px;">
+            
+            <section class="perfil">
+                
+                <div class="descripcion-perfil">
+                    <div style="background-color: rgb(0, 168, 197); padding: 20px; margin: 10px 0; border-radius: 5px; border: 2px solid #0077cc;">
+                        <p>¡Hola! Soy Santiago Rodriguez Ribeiro, estudiante de Ingeniería en Informática. Apasionado por la tecnología y el desarrollo de software, he adquirido habilidades en:</p>
+                        <p>Desarrollo Web: HTML, CSS, JavaScript, React, Angular.<br>
+                           Programación: Python, Java, C++.<br>
+                           Bases de Datos: MySQL, MongoDB.<br>
+                           Diseño: Adobe Photoshop, Illustrator, Figma.<br>
+                           Control de Versiones: Git, GitHub, GitLab.</p>
+                        <p>Me destaco por mi capacidad para resolver problemas, trabajar en equipo y aprender nuevas tecnologías rápidamente.</p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section>
+                <h2 style="text-align: center;">Enlaces a mis ejercicios</h2>
+                
+                <div style="background-color: rgb(0, 168, 197); padding: 20px; margin: 10px auto; border-radius: 5px; border: 2px solid #0077cc; max-width: 600px; margin-top: 40px;">
+                    <ol class="ejercicios-lista">
+                        <li><a href="Tp1/index.html">Ejercicio 1: Mi primera pagina web</a></li>
+                        <li><a href="Tp2/index.html">Ejercicio 2: Pagina web basica</a></li>
+                        <li><a href="Tp3/index.html">Ejercicio 3: Comenzando con CSS</a></li>
+                        <li><a href="Tp4/index.html">Ejercicio 4: Propiedades de cajas</a></li>
+                        <li><a href="Tp5/fijo.html">Ejercicio 5: Maquetado fijo fluido</a></li>
+                        <li><a href="Tp6/index.html">Ejercicio 6: Media Queries</a></li>
+                        <li><a href="Tp7/Ale.html">Ejercicio 7: Introduccion a JavaScript</a></li>
+                        <li><a href="Tp8/Aleatorio.html">Ejercicio 8: Introduccion a JavaScript</a></li>
+                        <li><a href="Tp9/index.html">Ejercicio 9: jQuery</a></li>
+                        <li><a href="Tp10/jquery.html">Ejercicio 10: Plugins de jQuery</a></li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+
+        <footer style="text-align: center; padding: 20px;">
+            <div class="redes-sociales">
+                <a href="https://wa.me/91164227343" target="_blank" class="redes-icono">
+                    <img src="imagenes/whatsapp.png" alt="WhatsApp" />
+                </a>
+                <span style="width: 20px; display: inline-block;"></span>
+                <a href="https://www.linkedin.com/in/akrrich-alesio-rojas-b83938224" target="_blank" class="redes-icono">
+                    <img src="imagenes/linkedin.png" alt="LinkedIn" />
+                </a>
+                <span style="width: 20px; display: inline-block;"></span>
+                <a href="mailto:santi.rodriguezz890@gmail.com" class="redes-icono">
+                    <img src="imagenes/gmail.png" alt="Gmail" />
+                </a>
+                <span style="width: 20px; display: inline-block;"></span>
+                <a href="https://github.com/sanro04" target="_blank" class="redes-icono">
+                    <img src="imagenes/githubdesktop.png" alt="GitHub" />
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const enlaces = document.querySelectorAll('a');
+            enlaces.forEach(function(enlace) {
+                enlace.setAttribute('aria-label', 'Enlace a ' + enlace.textContent);
+            });
+        });
+    </script>
+</body>
+</html>

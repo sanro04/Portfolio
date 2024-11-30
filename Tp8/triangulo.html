@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triángulo</title>
+    <script>
+
+        var lado1 = prompt("Ingrese el primer lado del triángulo");
+        var lado2 = prompt("Ingrese el segundo lado del triángulo");
+        var lado3 = prompt("Ingrese el tercer lado del triángulo");
+
+        lado1 = parseFloat(lado1);
+        lado2 = parseFloat(lado2);
+        lado3 = parseFloat(lado3);
+
+        if (lado1 === lado2 && lado2 === lado3) {
+            alert("El triángulo es equilátero.");
+        }
+
+        else if (lado1 === lado2 || lado2 === lado3 || lado1 === lado3) {
+            alert("El triángulo es isósceles.");
+        }
+        
+         else {
+            alert("El triángulo es escaleno.");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

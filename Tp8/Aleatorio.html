@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+    <script>
+
+        var numeroRandom = Math.floor(Math.random() * 11);
+        
+        function adivinarNumero() {
+
+            var intento = parseInt(prompt("Adivina el número entre 0 y 10"));
+            
+            while (intento !== numeroRandom) {
+
+                if (intento < numeroRandom) {
+                    intento = parseInt(prompt("Tu número es mayor, intenta nuevamente"));
+                }
+
+                else {
+                    intento = parseInt(prompt("Tu número es menor, intenta nuevamente"));
+                }
+            }
+            
+            alert("¡Felicidades, adivinaste el número!");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="adivinarNumero()">Adivina el número</button>
+</body>
+</html>
